@@ -33,6 +33,7 @@ export class AppointmentListComponent {
       this.newAppointmentDate = new Date();
 
       // alert(this.appointments.length);
+      localStorage.setItem("appoinments", JSON.stringify(this.appointments))
     }
   }
 
