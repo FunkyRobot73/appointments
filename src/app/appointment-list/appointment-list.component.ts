@@ -39,6 +39,7 @@ export class AppointmentListComponent {
 
   deleteAppointment(index: number) {
     this.appointments.splice(index,1)
+    localStorage.setItem("appoinments", JSON.stringify(this.appointments))
   }
 
 }

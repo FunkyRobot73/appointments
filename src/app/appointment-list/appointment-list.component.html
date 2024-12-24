@@ -300,14 +300,14 @@
 </div>
 <div class="card-container">
     <ul>
-        <li class="card" *ngFor="let appointment of appointments; index as i">
+        <p class="card" *ngFor="let appointment of appointments; index as i">
             
-            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+           
                 
                   
                   {{appointment.id}} || {{appointment.title}} || {{appointment.date}}
             <button (click)="deleteAppointment(i)">DELETE</button>
               
-        </li>
+        </p>
     </ul>
 </div>
